@@ -16,19 +16,15 @@ function App() {
     <div>
       <div className="s4">
       
+      <div className="s3">
+      <Button className="s5" variant="success">Multipli</Button>
+   
+      </div>
       <div className="s2">
         dfs
       </div>
-      
-      <div className="s2">
-      sdfsdf
-      </div>
 
-      <div className="s3">
-      <Button className="primary">Math Practice</Button>
-    
-   
-      </div>
+      
         
       </div>
     
