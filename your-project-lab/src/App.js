@@ -6,14 +6,27 @@ import Button from "react-bootstrap/Button";
 import './App.css';
 
 
-function App() {
-  const [temp, setTemp] = useState("hello");
 
+
+  
+
+  
+function App() {
+  const [mainContent, setMainContent] = useState("");
+  
+
+  const showAbout = () => {
+  
+    
+    setMainContent("hello from about");
+
+
+  }
 
   const showMultipli = () => {
   
-    setTemp("hello from multipli");
-    // alert("You are in Multipli")
+    setMainContent("hello from multipli");
+    
 
 
   }
@@ -27,12 +40,16 @@ function App() {
       <div className="s4">
       
       <div className="s3">
+        <div className="b2">
+
+        
+        </div>
       <Button onClick= {showMultipli} className="s5" variant="success">Multipli</Button>
-      <Button className="s5" variant="success">About</Button>
+      <Button onClick= {showAbout} className="b2" variant="success">About</Button>
    
       </div>
       <div className="s2">
-        {temp}
+        {mainContent}
         
       </div>
 
