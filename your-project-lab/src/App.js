@@ -40,12 +40,9 @@ function App() {
       <div className="s4">
       
       <div className="s3">
-        <div className="b2">
-
-        
-        </div>
-      <Button onClick= {showMultipli} className="s5" variant="success">Multipli</Button>
-      <Button onClick= {showAbout} className="b2" variant="success">About</Button>
+      
+      <Button onClick= {showMultipli} className="s5" variant="Secondary">Multipli</Button>
+      <Button onClick= {showAbout} className="b2" variant="Secondary">About</Button>
    
       </div>
       <div className="s2">
