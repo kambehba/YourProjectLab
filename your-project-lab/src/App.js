@@ -2,7 +2,8 @@
 import React,{useState} from "react";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
-
+import Multipli from "./Componenets/Multipli/Multipli";
+import About from "./Componenets/About/About";
 import './App.css';
 
 
@@ -12,27 +13,37 @@ import './App.css';
 
   
 function App() {
-  const [mainContent, setMainContent] = useState("");
+  let mainContent = null;
   
+  const [showMultipli, setShowMultipli] = useState(false);
+  const [showAbout, setShowAbout] = useState(true);
 
-  const showAbout = () => {
+  const handleAboutClick = () => {
   
     
-    setMainContent("hello from about");
+   setShowAbout(true);
+   setShowMultipli(false);
 
 
   }
 
-  const showMultipli = () => {
+  const handleMultipliClick = () => {
   
-    setMainContent("hello from multipli");
+   setShowAbout(false);
+   setShowMultipli(true);
     
+   }
+   if(showMultipli){
 
+  mainContent = (<div><Multipli/></div>);
 
-  }
+ }
 
+ if(showAbout){
 
+  mainContent = (<div><About/></div>);
 
+ }
 
 
   return (
@@ -41,8 +52,8 @@ function App() {
       
       <div className="s3">
       
-      <Button onClick= {showMultipli} className="s5" variant="Secondary">Multipli</Button>
-      <Button onClick= {showAbout} className="b2" variant="Secondary">About</Button>
+      <Button onClick= {handleMultipliClick} className="s5" variant="Secondary">Multipli</Button>
+      <Button onClick= {handleAboutClick} className="b2" variant="Secondary">About</Button>
    
       </div>
       <div className="s2">
