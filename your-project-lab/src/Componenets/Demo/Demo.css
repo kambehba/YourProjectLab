@@ -1,0 +1,34 @@
+.about-s1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+    width: auto;
+    margin-top: 10rem;
+  }
+  
+  .about-s2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-s3 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .about-s4 {
+    text-shadow: 2px 2px #fb7806;
+    color: blue;
+    margin-top: 2rem;
+  }
+  
+  .about-s5 {
+    color: blue;
+    margin-left: 2rem;
+  }
+  
+  .about-s6 {
+    height: 100%;
+  }
