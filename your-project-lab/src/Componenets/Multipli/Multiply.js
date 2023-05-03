@@ -6,6 +6,7 @@ import correctImage from "../../images/i1.png";
 import wrongImage from "../../images/i2.png";
 import successSound from "../../sounds/success.mp3";
 import failSound from "../../sounds/fail.mp3";
+import v1 from "../../images/v2.mp4";
 function Multiply() {
   let questionSection = null;
   let answerSection = null;
@@ -82,8 +83,8 @@ function Multiply() {
       setShowQuestion(false);
       setShowNumbersSection(true);
       alert("Great Job ! You Mastered number :" + " " + selectedNumber.current);
-      questions.current=[3, 6, 4, 7, 2, 8, 5, 9, 12];
-      buttonStyle.current="btn btn-success multiply_s3";
+      questions.current = [3, 6, 4, 7, 2, 8, 5, 9, 12];
+      buttonStyle.current = "btn btn-success multiply_s3";
       setRefresh(!refresh);
     }
 
@@ -103,7 +104,7 @@ function Multiply() {
       <div className="multiply_s1">
         <div className="multiply_s2">
           <Button
-            className= {buttonStyle.current}
+            className={buttonStyle.current}
             onClick={() => handleNumberClick(2)}
           >
             <h1>2</h1>
@@ -242,15 +243,50 @@ function Multiply() {
   return (
     <div className="multiply_s1">
       <div className="multiply_s4">
-        <h1>Build Your Multiplication SKILLS </h1>
+        <h1 class="display-2">My First App Ever &#128515; </h1>
+        <div className="multiply_s4">
+          <h2 class="display-6 multiply_s10">
+            <br />I Designed and Build this App for my 4th Grader Brother
+            <br /> to Help him Master Multiplication Table.
+            <br /> I taught Myself tons of Materials to be
+            <br /> able to do this with zero experience in
+            <br /> Software Development.
+          </h2>
+        </div>
+        <div className="multiply_s4">
+          <h2 class="display-6 multiply_s10">
+            <br /> You can Play with the App down Below.
+            <br /> There are still lot to improve and
+            <br /> I am planning to add more features
+            <br /> as I gain more experience.
+            <br /> This App is Built with React Framework!
+          </h2>
+        </div>
       </div>
-      {numbersSections}
+      <div className="multiply_s4">
+        <div className="multiply_s4">
+          <h1 class="display-2">Build Your Multiplication SKILLS </h1>
+        </div>
+        {numbersSections}
 
-      <div className="multiply_s1">
-        {questionSection}
-        {answerSection}
+        <div className="multiply_s1">
+          {questionSection}
+          {answerSection}
+        </div>
+        <div className="multiply_s4"> {indicatorSection}</div>
       </div>
-      <div className="multiply_s4"> {indicatorSection}</div>
+      <div className="multiply_s4">
+        <div>
+          <p className="multiply_s4">
+            <h6 class="display-6">
+              This is a Demo of my first Software Solution{" "}
+            </h6>
+            <video width="600" height="600" controls>
+              <source src={v1} type="video/mp4"></source>
+            </video>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
