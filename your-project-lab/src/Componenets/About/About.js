@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import headshot from "../../images/i3.png";
 import wo from "../../images/i2.jpg";
-import rustin from "../../images/rustin.png";
+import rustin from "../../images/i9.jpg";
 
 import "./About.css";
 
