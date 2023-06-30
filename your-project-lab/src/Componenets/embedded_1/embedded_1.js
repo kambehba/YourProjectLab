@@ -3,6 +3,7 @@ import "./embedded_1.css";
 import i8 from "../../images/i8.png";
 import i5 from "../../images/i5.png";
 import i7 from "../../images/i7.png";
+import v3 from "../../images/v3.mp4";
 
 function Embedded_1() {
   return (
@@ -36,6 +37,12 @@ function Embedded_1() {
         Connect the Live Line to Output
       </h5>
       <hr class="hr hr-blurry" />
+      <h5 className="display-5 d-flex justify-content-center">Demo</h5>
+      <div className="display-7 d-flex justify-content-center embedded_1_s2">
+        <video width="740" height="740" controls>
+          <source src={v3} type="video/mp4" />
+        </video>
+      </div>
     </div>
   );
 }
