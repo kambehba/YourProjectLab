@@ -21,18 +21,24 @@ function About() {
         <h6 className="display-6 about-10">
           This is the Portal to all my current and Futuer Projects.
         </h6>
+        <hr class="hr hr-blurry" />
         <h6 className="display-6 about-10">
-          I am Interested in Learning About Embedded Systems and Robotics.
+          Embedded Systems and Robotics are my current Interests.
         </h6>
+        <hr class="hr hr-blurry" />
         <h6 className="display-6 about-10">
-          I Have Started Teaching Myself Software Developments
+          I am Teaching Myself Software Developments and more ...
         </h6>
+        <hr class="hr hr-blurry" />
         <h6 className="display-6 about-10">
-          Here in This Site I will Demo my Works as I Progress.
+          I Demo my Work Here as I Progress.
         </h6>
+        <hr class="hr hr-blurry" />
         <h6 className="display-6 about-10">
-          I Develop this Site Using React Framework
+          I Developed this Site Using React Framework.
         </h6>
+        <hr class="hr hr-blurry" />
+        <hr class="hr hr-blurry" />
       </div>
       <div className="about-s9"></div>
     </div>
